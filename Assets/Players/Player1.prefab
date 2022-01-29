@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 794711066103931336}
   - component: {fileID: 794711067635759949}
-  - component: {fileID: 794711066169275744}
   - component: {fileID: 794711067635759948}
   - component: {fileID: 794711067635759939}
+  - component: {fileID: 794711066169275744}
   - component: {fileID: 794711067635759938}
   - component: {fileID: 794711067635759937}
   m_Layer: 0
@@ -87,22 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &794711066169275744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794711067635759936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b4a00be62756df4c83743aed8661af2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  firePoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  bulletForce: 20
 --- !u!61 &794711067635759948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,6 +134,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &794711066169275744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794711067635759936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4a00be62756df4c83743aed8661af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  firePoint: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  bulletForce: 20
 --- !u!114 &794711067635759938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +196,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 6990f9d3-34ee-4b5e-aef5-78def186f562
     m_ActionName: Player/Shoot[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 794711066169275744}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: onRotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4a76264b-2d6c-4556-8136-c72e82947e87
+    m_ActionName: Player/Rotation[/XInputControllerWindows/rightStick,/XInputControllerWindows1/rightStick,/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
