@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
+        flashLightMask = GameObject.FindGameObjectWithTag("Flashlight").GetComponent<SpriteMask>();
+
         controls.Player.Shoot.performed += ctx => PlayerShoot();
     }
 
@@ -49,7 +51,6 @@ public class PlayerController : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-        flashLightMask = GameObject.FindGameObjectWithTag("Flashlight").GetComponent<SpriteMask>();
     }
 
     // Update is called once per frame
@@ -65,7 +66,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float angle = Mathf.Atan2(rotationInput.x, rotationInput.y) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.back);
         
         Debug.Log(flashLightMask.transform.rotation.z);
         Debug.Log(rotation);
