@@ -141,6 +141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b4a00be62756df4c83743aed8661af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &479647532 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3528429435349225128, guid: 11d960c5ac90e8746a12d733471c3a23,
+    type: 3}
+  m_PrefabInstance: {fileID: 3528429436797869124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &479647533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +189,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 45caec75-9103-4a8b-8d38-02b5338a3a24
     m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 479647530}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: onRotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a02f363f-cc84-4ed5-84f3-714734dcbd69
+    m_ActionName: Player/Rotation[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Player
@@ -331,11 +353,97 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 45caec75-9103-4a8b-8d38-02b5338a3a24
     m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a02f363f-cc84-4ed5-84f3-714734dcbd69
+    m_ActionName: Player/Rotation[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1 &1270301563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270301564}
+  - component: {fileID: 1270301565}
+  m_Layer: 0
+  m_Name: Sprite Mask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270301564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270301563}
+  m_LocalRotation: {x: 0, y: 0, z: 0.06975647, w: 0.9975641}
+  m_LocalPosition: {x: -0.11, y: 0.11, z: 6.7477e-11}
+  m_LocalScale: {x: 2.3088849, y: 3.699379, z: 1.0607}
+  m_Children: []
+  m_Father: {fileID: 479647532}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8}
+--- !u!331 &1270301565
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270301563}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -9095717837082945937, guid: d34fa05c7fa12644780e72e62b948443,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 1
 --- !u!850595691 &1402124096
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -412,12 +520,12 @@ PrefabInstance:
     - target: {fileID: 3528429435349225128, guid: 11d960c5ac90e8746a12d733471c3a23,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.13
+      value: 3.71
       objectReference: {fileID: 0}
     - target: {fileID: 3528429435349225128, guid: 11d960c5ac90e8746a12d733471c3a23,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.13
+      value: -1.67
       objectReference: {fileID: 0}
     - target: {fileID: 3528429435349225128, guid: 11d960c5ac90e8746a12d733471c3a23,
         type: 3}
@@ -464,6 +572,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 3528429435349225133, guid: 11d960c5ac90e8746a12d733471c3a23,
+        type: 3}
+      propertyPath: spriteMask
+      value: 
+      objectReference: {fileID: 1270301565}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
 --- !u!1001 &5509996522607835366
@@ -473,6 +586,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5509996522848178216, guid: d40ab26ed09966b438cc8033c8e10c5f,
+        type: 3}
+      propertyPath: spriteMask
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509996522848178217, guid: d40ab26ed09966b438cc8033c8e10c5f,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5509996522848178221, guid: d40ab26ed09966b438cc8033c8e10c5f,
         type: 3}
       propertyPath: m_Name
