@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     private Rigidbody2D player;
     private Vector2 movementInput = Vector2.zero;
-    private Vector3 rotationInput = Vector3.zero;
+    private Vector2 rotationInput = Vector2.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +33,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        float angle = Mathf.Atan2(rotationInput.x, rotationInput.y) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         
-        // Vector2 direction = Camera.main.ScreenToWorldPoint(rotationInput) - transform.position;
-        // float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        // Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        // spriteMask.transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 0);
+        Debug.Log(flashLightMask.transform.rotation.z);
+        Debug.Log(rotation);
+        player.transform.rotation = Quaternion.Slerp(flashLightMask.transform.rotation, rotation, 1);
     }
 
     public void onMove(InputAction.CallbackContext context)
@@ -47,6 +48,6 @@ public class PlayerController : MonoBehaviour
 
     public void onRotate(InputAction.CallbackContext context)
     {
-        rotationInput = context.ReadValue<Vector3>();
+        rotationInput = context.ReadValue<Vector2>();
     }
 }
