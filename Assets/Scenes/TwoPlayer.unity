@@ -331,7 +331,7 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 45caec75-9103-4a8b-8d38-02b5338a3a24
     m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
