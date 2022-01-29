@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &479647532 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3528429435349225128, guid: 11d960c5ac90e8746a12d733471c3a23,
+    type: 3}
+  m_PrefabInstance: {fileID: 3528429436797869124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &504066355
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,8 +318,12 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 45caec75-9103-4a8b-8d38-02b5338a3a24
     m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6990f9d3-34ee-4b5e-aef5-78def186f562
+    m_ActionName: Player/Shoot[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Gamepad
+  m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -346,6 +356,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1206664501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1206664502}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1206664502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206664501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.54, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 479647532}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &1402124096
 LightingSettings:
@@ -453,7 +493,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -551,6 +591,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 479647533, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Gamepad
+      objectReference: {fileID: 0}
     - target: {fileID: 3528429435349225128, guid: 11d960c5ac90e8746a12d733471c3a23,
         type: 3}
       propertyPath: m_RootOrder
@@ -611,6 +655,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 3528429435349225133, guid: 11d960c5ac90e8746a12d733471c3a23,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1206664502}
+    - target: {fileID: 3528429435349225133, guid: 11d960c5ac90e8746a12d733471c3a23,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4457195507797414288, guid: cb7d46683f6b93549a2c3d6354fe8d62,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
 --- !u!1001 &5509996522607835366
