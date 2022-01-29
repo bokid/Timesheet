@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &414434180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3528429435349225133, guid: 11d960c5ac90e8746a12d733471c3a23,
+    type: 3}
+  m_PrefabInstance: {fileID: 3528429436797869124}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4a00be62756df4c83743aed8661af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &504066355
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,11 +329,23 @@ MonoBehaviour:
     m_ActionId: 6990f9d3-34ee-4b5e-aef5-78def186f562
     m_ActionName: Player/Shoot[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 682934802}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: onRotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 4a76264b-2d6c-4556-8136-c72e82947e87
     m_ActionName: Player/Rotation[/XInputControllerWindows/rightStick,/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Keyboard
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -559,6 +583,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 479647533, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479647533, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479647533, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 414434180}
+    - target: {fileID: 479647533, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 479647533, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 479647533, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 479647533, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206664501, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
+      propertyPath: m_TagString
+      value: Firepoint
+      objectReference: {fileID: 0}
     - target: {fileID: 1980905248, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -627,6 +683,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 3528429435349225133, guid: 11d960c5ac90e8746a12d733471c3a23,
+        type: 3}
+      propertyPath: charNum
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
 --- !u!1001 &5509996522607835366
@@ -636,6 +697,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5509996522848178216, guid: d40ab26ed09966b438cc8033c8e10c5f,
+        type: 3}
+      propertyPath: charNum
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509996522848178216, guid: d40ab26ed09966b438cc8033c8e10c5f,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4457195507797414288, guid: cb7d46683f6b93549a2c3d6354fe8d62,
+        type: 3}
     - target: {fileID: 5509996522848178217, guid: d40ab26ed09966b438cc8033c8e10c5f,
         type: 3}
       propertyPath: m_Color.b
