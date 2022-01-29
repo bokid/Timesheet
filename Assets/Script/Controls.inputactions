@@ -83,7 +83,7 @@
                 {
                     "name": "",
                     "id": "edde990d-1772-4ab1-be2d-187a9cb9b15b",
-                    "path": "<Gamepad>/leftStick",
+                    "path": "<SwitchProControllerHID>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
