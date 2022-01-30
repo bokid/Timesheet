@@ -6,15 +6,14 @@ using System;
 public class PlayerDeath : MonoBehaviour
 {
     private DateTime respawnTime = DateTime.Now;
+    public Transform respawnPoint;
+    // public GameObject player1;
+    // public GameObject player2;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        if (collision.gameObject.CompareTag("Enemy") && (DateTime.Now - respawnTime).TotalSeconds < 2769)
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            
-            Destroy(gameObject);
-            LevelManager.instance.Respawn();
-            respawnTime = DateTime.Now;
+            gameObject.transform.position = respawnPoint.position;
         }
     }
 }
