@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
     private Vector2 rotationInput = Vector2.zero;
+    public AudioClip shootSound;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        SoundManager.Instance.PlaySFX(shootSound);
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
 }

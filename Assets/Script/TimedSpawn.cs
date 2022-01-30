@@ -9,8 +9,8 @@ public class TimedSpawn : MonoBehaviour {
     public float spawnTime;
     public float spawnDelay;
 
-    public float min;
-    public float max;
+    //public float min;
+    //public float max;
 
     // private float nextActionTime = 0.0f;
     // public float period = 0.1f;
@@ -21,7 +21,7 @@ public class TimedSpawn : MonoBehaviour {
 
     void Update()
     {
-        randRange = new Vector2(Random.Range(min, max), Random.Range(min, max));
+        //randRange = new Vector2(Random.Range(min, max), Random.Range(min, max));
         // if (Time.time > nextActionTime){
         //     nextActionTime = Time.time + period;
 
@@ -34,7 +34,7 @@ public class TimedSpawn : MonoBehaviour {
 	}
 	
     public void SpawnObject() {
-        Instantiate(spawnee, randRange, transform.rotation);
+        Instantiate(spawnee, transform.position, transform.rotation);
         if(stopSpawning) {
             CancelInvoke("SpawnObject");
         }

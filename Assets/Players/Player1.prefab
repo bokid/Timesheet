@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4678416268966994461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.018, y: 0.1529, z: 0}
-  m_LocalScale: {x: 0.89170396, y: 1.5106224, z: 1}
+  m_LocalPosition: {x: -0.0195, y: 0.0431, z: 0}
+  m_LocalScale: {x: 0.456687, y: 0.65961844, z: 1}
   m_Children: []
   m_Father: {fileID: 4678416269065250506}
   m_RootOrder: 0
@@ -71,8 +71,7 @@ SpriteMask:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: d34fa05c7fa12644780e72e62b948443,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 114ff0ae323a38c45a395fc2a203cd97, type: 3}
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 0
   m_BackSortingLayerID: 0
@@ -233,6 +232,7 @@ MonoBehaviour:
   firePoint: {fileID: 0}
   bulletPrefab: {fileID: 0}
   bulletForce: 20
+  shootSound: {fileID: 0}
 --- !u!114 &4678416269595121535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,4 +312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4dad6776816b2d4d83a9ce746509c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 0}
+  respawnPoint: {fileID: 1733376885843901376, guid: 7c0e3c0be5db6804788f2b8e877a9e62,
+    type: 3}
+  deathSound: {fileID: 8300000, guid: af445a9a14d868d4688a82c41645105d, type: 3}

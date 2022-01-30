@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    //public AudioSource SFXSource;
+    public AudioSource SFXSource;
     public AudioSource MusicSource;
     public static SoundManager Instance = null;
 
@@ -21,9 +21,9 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // public void PlaySFX(AudioClip clip)
-    // {
-    //     SFXSource.clip = clip;
-    //     SFXSource.Play();
-    // }
+    public void PlaySFX(AudioClip clip)
+    {
+        SFXSource.clip = clip;
+        SFXSource.Play();
+    }
 }

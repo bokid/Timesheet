@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 5509996522848178219}
   - component: {fileID: 5509996522848178218}
   - component: {fileID: 682934805}
+  - component: {fileID: 6108407484203298954}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -134,6 +135,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4457195507797414288, guid: cb7d46683f6b93549a2c3d6354fe8d62,
     type: 3}
   bulletForce: 20
+  shootSound: {fileID: 8300000, guid: f1afb677113657646a3a155cd8ef75c5, type: 3}
 --- !u!61 &5509996522848178219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -260,3 +262,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6108407484203298954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509996522848178221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dad6776816b2d4d83a9ce746509c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 1733376885843901376, guid: 7c0e3c0be5db6804788f2b8e877a9e62,
+    type: 3}
+  deathSound: {fileID: 8300000, guid: 79170e65556dc78418b25bdc4eaaff76, type: 3}

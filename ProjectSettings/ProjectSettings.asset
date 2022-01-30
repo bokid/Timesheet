@@ -12,17 +12,17 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Timesheet
+  companyName: Academy PGH
+  productName: 'Timesheets: You Can Never Clock Out'
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
-  m_SplashScreenAnimation: 1
+  m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -31,16 +31,49 @@ PlayerSettings:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 0.99999994
+    height: 0.99999994
   m_SplashScreenBackgroundPortraitUvs:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
-  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+    duration: 2
+  - logo: {fileID: 21300000, guid: b9c4e6cca925e0b4484aa68dc7c6da73, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 6805b98f3e8616d42a9add3f59020f3e, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 53c55db96ef818541a999b7ea48e1b86, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: e1ea5c3556461594b880f90771b180c4, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: ac21f11af45d5b441b79b6c2bc38e306, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 8d36296c62f3add4980bb5c2318d2d87, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: d0f59a1442ffba546a4e57e51c0256f8, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: dc442f357f22d304fad90c2b64a95da8, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: f8e30f07750f68e4e9c9b24d638ecf15, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 7b5eece564e249741836c0f25e398c69, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 1ff8ed8b00e84d0419eb4e9d39341631, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: f036e62feabb0834b9996a7851d9231a, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: aa925110516738d479ec000e0dc7a518, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: dfeb64fce591e60498c2380332fe15b7, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: f14ce385c93fe1a428b8aa3be33de6ed, type: 3}
+    duration: 2
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: bcd8a8d4a1ecb8442b2fe3ebbd4d2d76,
+    type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -135,7 +168,8 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 459080926d45e9e4490a6d2110e4e2af, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -153,7 +187,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.Timesheet
+    Standalone: com.AcademyPGH.TimesheetsYouCanNeverClockOut
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -547,7 +581,7 @@ PlayerSettings:
   monoEnv: 
   splashScreenBackgroundSourceLandscape: {fileID: 0}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
-  blurSplashScreenBackground: 1
+  blurSplashScreenBackground: 0
   spritePackerPolicy: 
   webGLMemorySize: 16
   webGLExceptionSupport: 1
