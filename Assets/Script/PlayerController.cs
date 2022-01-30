@@ -34,9 +34,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        float angle = Mathf.Atan2(rotationInput.x, rotationInput.y) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.back);
-        player.transform.rotation = Quaternion.Slerp(flashLightMask.transform.rotation, rotation, 1);
+        if(rotationInput.x != 0 && rotationInput.y != 0){
+            float angle = Mathf.Atan2(rotationInput.x, rotationInput.y) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.back);
+            player.transform.rotation = Quaternion.Slerp(flashLightMask.transform.rotation, rotation, 0.2f);
+        }
     }
 
     public void onMove(InputAction.CallbackContext context)
