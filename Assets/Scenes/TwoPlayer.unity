@@ -761,6 +761,25 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2093647440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5509996522848178221, guid: d40ab26ed09966b438cc8033c8e10c5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 829499695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2093647446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093647440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dad6776816b2d4d83a9ce746509c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 699056509}
 --- !u!4 &2098949075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5509996522848178230, guid: d40ab26ed09966b438cc8033c8e10c5f,
@@ -774,6 +793,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4678416268966994451, guid: 11d960c5ac90e8746a12d733471c3a23,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4678416269065250506, guid: 11d960c5ac90e8746a12d733471c3a23,
         type: 3}
       propertyPath: m_RootOrder
@@ -834,5 +858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 4678416269595121534, guid: 11d960c5ac90e8746a12d733471c3a23,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 699056509}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d960c5ac90e8746a12d733471c3a23, type: 3}
