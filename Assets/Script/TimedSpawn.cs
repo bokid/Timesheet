@@ -9,15 +9,19 @@ public class TimedSpawn : MonoBehaviour {
     public float spawnTime;
     public float spawnDelay;
 
+    public float min;
+    public float max;
+
     // private float nextActionTime = 0.0f;
     // public float period = 0.1f;
 
-    private Vector2 randRange;
+   private Vector2 randRange;
 
 	// Use this for initialization
 
-    void Update(){
-        randRange = new Vector2(Random.Range(-20, -10), Random.Range(-20, -10));
+    void Update()
+    {
+        randRange = new Vector2(Random.Range(min, max), Random.Range(min, max));
         // if (Time.time > nextActionTime){
         //     nextActionTime = Time.time + period;
 

@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     }
   
     public void Respawn () {
+        
         Instantiate(player1Prefab, respawnPoint.position, Quaternion.identity);
     }
 }
